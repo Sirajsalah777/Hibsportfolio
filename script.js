@@ -488,8 +488,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateCarousel() {
         requestAnimationFrame(() => {
             const isRTL = document.documentElement.dir === 'rtl';
-            const itemWidth = items[0].offsetWidth;
-            const containerWidth = track.parentElement.offsetWidth;
+            // Recalculate dimensions to handle potential race conditions
+            const itemWidth = items[0].getBoundingClientRect().width;
+            const containerWidth = track.parentElement.clientWidth;
+
+            if (itemWidth === 0 || containerWidth === 0) return;
 
             // Calculate the center position
             const centerOffset = (containerWidth - itemWidth) / 2;

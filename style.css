@@ -1427,8 +1427,9 @@ button {
     /* Carousel Mobile Adjustments */
     .project-carousel-container {
         padding: 3rem 0;
-        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        overflow-x: hidden;
     }
 
     .project-carousel-item {
@@ -1445,8 +1446,12 @@ button {
     }
 
     .project-carousel-item.active .project-card {
-        transform: scale(1.05);
-        box-shadow: 0 15px 35px rgba(232, 114, 154, 0.25);
+        transform: scale(1.02);
+        box-shadow: 0 15px 35px rgba(232, 114, 154, 0.2);
+    }
+
+    .project-image {
+        aspect-ratio: 4/5;
     }
 
     .project-info {
