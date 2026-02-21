@@ -612,8 +612,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle Window Resize
     window.addEventListener('resize', updateCarousel);
 
-    // Initial positioning
-    updateCarousel();
+    // Initial positioning with a small delay to ensure layout is ready
+    setTimeout(updateCarousel, 100);
+    window.addEventListener('load', updateCarousel);
 
     // ---------- Parallax Orbs (subtle) ----------
     window.addEventListener('scroll', () => {
