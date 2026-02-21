@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hiba Lahjou — Digital Marketing Student. Portfolio showcasing SEO, social media strategy, content creation, and analytics expertise.">
+    <title>Hiba Lahjou | Digital Marketing Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span>H</span><span>I</span><span>B</span><span>A</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">HL<span class="accent-dot">.</span></a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="5" />
+                <path
+                    d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+        </button>
+
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="nav-link" data-index="1" data-i18n="nav_about">About</a>
+            <a href="#skills" class="nav-link" data-index="2" data-i18n="nav_skills">Skills</a>
+            <a href="#projects" class="nav-link" data-index="3" data-i18n="nav_projects">Projects</a>
+            <a href="#contact" class="nav-link" data-index="4" data-i18n="nav_contact">Contact</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" data-i18n-aria="aria_nav_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient-orb hero-orb-1"></div>
+            <div class="hero-gradient-orb hero-orb-2"></div>
+            <div class="hero-gradient-orb hero-orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-tag reveal-up">
+                    <span class="tag-line"></span>
+                    <span data-i18n="hero_tag">Digital Marketing Student</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-line reveal-up">
+                        <span class="hero-word" data-i18n="hero_first_name">Hiba</span>
+                    </span>
+                    <span class="hero-line reveal-up">
+                        <span class="hero-word" data-i18n="hero_last_name">Lahjou</span><span
+                            class="accent-dot large">.</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle reveal-up" data-i18n="hero_subtitle">Crafting digital strategies that connect
+                    brands with their audience
+                    through data-driven creativity.</p>
+                <div class="hero-cta reveal-up">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="hero_btn_work">View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost" data-i18n="hero_btn_contact">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image reveal-up">
+                <div class="hero-image-frame">
+                    <img src="pictures/hibs.jpeg" alt="Hiba Lahjou" class="hero-portrait"
+                        data-i18n-alt="alt_hero_portrait">
+                </div>
+                <div class="hero-image-blob"></div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span data-i18n="hero_scroll">Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">01</span>
+                <h2 class="section-title"><span data-i18n="about_title_1">About</span> <span class="text-gradient"
+                        data-i18n="about_title_2">Me</span></h2>
+            </div>
+            <div class="about-grid no-image">
+                <div class="about-content reveal-up">
+                    <p class="about-lead" data-i18n="about_lead">I'm a passionate <strong>Digital Marketing
+                            student</strong> who thrives at the
+                        intersection of creativity and analytics.</p>
+                    <p class="about-text" data-i18n="about_text_1">With a keen eye for trends and a love for data, I
+                        specialize in building
+                        comprehensive digital strategies that drive real results. From crafting compelling social media
+                        campaigns to optimizing SEO performance, I bring a strategic mindset to every project.</p>
+                    <p class="about-text" data-i18n="about_text_2">I believe that great marketing tells a story — and
+                        every brand has a unique
+                        one waiting to be told.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">02</span>
+                <h2 class="section-title"><span data-i18n="skills_title_1">My</span> <span class="text-gradient"
+                        data-i18n="skills_title_2">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Social Media Management -->
+                <div class="skill-card reveal-up" style="--delay: 0">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title" data-i18n="skill_sm_title">Social Media Management</h3>
+                    <p class="skill-desc" data-i18n="skill_sm_desc">Content planning, community management, and
+                        platform-specific strategies
+                        across Instagram, Facebook, and TikTok.</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="95"></div>
+                    </div>
+                </div>
+
+                <!-- Content Creation -->
+                <div class="skill-card reveal-up" style="--delay: 1">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title" data-i18n="skill_content_title">Content Creation</h3>
+                    <p class="skill-desc" data-i18n="skill_content_desc">Copywriting and visual storytelling to craft
+                        compelling brand narratives and
+                        engaging digital assets.</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+
+                <!-- SEO Basics -->
+                <div class="skill-card reveal-up" style="--delay: 2">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title" data-i18n="skill_seo_title">SEO Basics</h3>
+                    <p class="skill-desc" data-i18n="skill_seo_desc">Understanding search algorithms, keyword
+                        optimization, and on-page technical
+                        fundamentals.</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+
+                <!-- Canva & Visual Content Design -->
+                <div class="skill-card reveal-up" style="--delay: 3">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title" data-i18n="skill_canva_title">Canva & Visual Design</h3>
+                    <p class="skill-desc" data-i18n="skill_canva_desc">Designing high-quality visual content using Canva
+                        and other creative tools to
+                        enhance brand aesthetic.</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="92"></div>
+                    </div>
+                </div>
+
+                <!-- Communication -->
+                <div class="skill-card reveal-up" style="--delay: 4">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.021z" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title" data-i18n="skill_comm_title">Communication</h3>
+                    <p class="skill-desc" data-i18n="skill_comm_desc">Effective verbal and written communication,
+                        essential for client relations and
+                        teamwork.</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="94"></div>
+                    </div>
+                </div>
+
+                <!-- Organizational Skills -->
+                <div class="skill-card reveal-up" style="--delay: 5">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title" data-i18n="skill_org_title">Organizational Skills</h3>
+                    <p class="skill-desc" data-i18n="skill_org_desc">Strong time management and project organization
+                        talents to ensure efficient
+                        and timely delivery.</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">03</span>
+                <h2 class="section-title"><span data-i18n="projects_title_1">My</span> <span class="text-gradient"
+                        data-i18n="projects_title_2">Projects</span></h2>
+            </div>
+            <div class="project-carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Previous project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+
+                <div class="project-carousel-container">
+                    <div class="project-carousel-track" id="projectTrack">
+                        <!-- a.jpeg — ISMAGI BDE Ifrane Ski Trip Survey -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 0">
+                                <div class="project-image">
+                                    <img src="pictures/a.jpeg"
+                                        alt="ISMAGI BDE — Votre avis compte! Ifrane Ski Trip Survey" class="project-img"
+                                        data-i18n-alt="alt_project_ifrane_survey">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag">Social Media</span>
+                                        <span class="project-tag">Engagement</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_ifrane_survey_title">ISMAGI BDE —
+                                        Ifrane Survey
+                                        Post</h3>
+                                    <p class="project-desc" data-i18n="project_ifrane_survey_desc">Designed an
+                                        interactive survey
+                                        post for ISMAGI BDE's ski trip to Ifrane,
+                                        featuring mountain visuals and a QR code for student feedback.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- b.jpeg — ISMAGI BDE Ifrane Snow Day Trip -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 1">
+                                <div class="project-image">
+                                    <img src="pictures/b.jpeg" alt="ISMAGI BDE — Une Journée Blanche Ifrane Trip"
+                                        class="project-img" data-i18n-alt="alt_project_ifrane_snow">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_event_marketing">Event Marketing</span>
+                                        <span class="project-tag" data-i18n="tag_poster_design">Poster Design</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_ifrane_snow_title">ISMAGI BDE — Ifrane
+                                        Snow Trip
+                                    </h3>
+                                    <p class="project-desc" data-i18n="project_ifrane_snow_desc">Created a visually
+                                        stunning
+                                        promotional poster for ISMAGI BDE's "Journée
+                                        Blanche" snow trip to Ifrane, complete with pricing and photo collage.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- c.jpeg — ISMAGI BDE CAN Live Viewing -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 2">
+                                <div class="project-image">
+                                    <img src="pictures/c.jpeg" alt="ISMAGI BDE — Vivez la CAN en Live"
+                                        class="project-img" data-i18n-alt="alt_project_can_live">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_event_marketing">Event Marketing</span>
+                                        <span class="project-tag" data-i18n="tag_sports">Sports</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_can_live_title">ISMAGI BDE — CAN Live
+                                        Viewing</h3>
+                                    <p class="project-desc" data-i18n="project_can_live_desc">Created promotional
+                                        material for
+                                        ISMAGI BDE's live CAN football viewing
+                                        event with bold typography, Moroccan flags, and an energetic stadium atmosphere.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- d.jpeg — ISMAGI BDE Masquerade Ball -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 3">
+                                <div class="project-image">
+                                    <img src="pictures/d.jpeg" alt="ISMAGI BDE — Un Bal masqué New Year's Party"
+                                        class="project-img" data-i18n-alt="alt_project_masquerade">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_event_design">Event Design</span>
+                                        <span class="project-tag" data-i18n="tag_poster">Poster</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_masquerade_title">ISMAGI BDE —
+                                        Masquerade Ball</h3>
+                                    <p class="project-desc" data-i18n="project_masquerade_desc">Designed a cinematic
+                                        event poster
+                                        for ISMAGI BDE's "Un Bal masqué" New
+                                        Year's party, featuring dramatic lighting and elegant masquerade imagery.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- e.jpeg — Cherry Cream Promo Post -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 4">
+                                <div class="project-image">
+                                    <img src="pictures/e.jpeg" alt="Cherry Cream — Buy 2 Get 1 Free Promo Post"
+                                        class="project-img" data-i18n-alt="alt_project_cherry_promo">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_social_media">Social Media</span>
+                                        <span class="project-tag" data-i18n="tag_graphic_design">Graphic Design</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_cherry_promo_title">Cherry Cream —
+                                        Promo Post</h3>
+                                    <p class="project-desc" data-i18n="project_cherry_promo_desc">Designed a vibrant
+                                        promotional
+                                        social media post for Cherry Cream's "Buy
+                                        2 Get 1 Free" ice cream campaign with bold typography and appetizing visuals.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- f.jpeg — Cherry Cream Logo -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 5">
+                                <div class="project-image">
+                                    <img src="pictures/f.jpeg" alt="Cherry Cream — Logo Design" class="project-img"
+                                        data-i18n-alt="alt_project_cherry_identity">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_branding">Branding</span>
+                                        <span class="project-tag" data-i18n="tag_logo_design">Logo Design</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_cherry_identity_title">Cherry Cream —
+                                        Brand
+                                        Identity</h3>
+                                    <p class="project-desc" data-i18n="project_cherry_identity_desc">Created the
+                                        complete brand
+                                        identity and logo for Cherry Cream, a playful
+                                        ice cream brand featuring soft pastels and a cherry motif.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- h.jpeg — ISMAGI BDE Ramadan Panier -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 6">
+                                <div class="project-image">
+                                    <img src="pictures/h.jpeg" alt="ISMAGI BDE — Panier Ramadan" class="project-img"
+                                        data-i18n-alt="alt_project_ramadan">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_charity">Charity</span>
+                                        <span class="project-tag" data-i18n="tag_social_impact">Social Impact</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_ramadan_title">ISMAGI BDE — Ramadan
+                                        Panier</h3>
+                                    <p class="project-desc" data-i18n="project_ramadan_desc">Designed promotional
+                                        material for the 'Panier Ramadan' charity initiative, encouraging donations and
+                                        community participation.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- j.jpeg — Cherry Cream Promo Variant -->
+                        <div class="project-carousel-item">
+                            <article class="project-card" style="--delay: 7">
+                                <div class="project-image">
+                                    <img src="pictures/j.jpeg" alt="Cherry Cream — Framed Promo Post"
+                                        class="project-img" data-i18n-alt="alt_project_cherry_variant">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-i18n="tag_content_design">Content Design</span>
+                                        <span class="project-tag" data-i18n="tag_campaign">Campaign</span>
+                                    </div>
+                                    <h3 class="project-title" data-i18n="project_cherry_variant_title">Cherry Cream —
+                                        Campaign
+                                        Variant</h3>
+                                    <p class="project-desc" data-i18n="project_cherry_variant_desc">Developed an
+                                        alternative framed
+                                        version of the Cherry Cream promo post
+                                        for cross-platform campaign consistency and A/B testing.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" aria-label="Next project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+
+                <div class="carousel-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">04</span>
+                <h2 class="section-title"><span data-i18n="contact_title_1">Let's</span> <span class="text-gradient"
+                        data-i18n="contact_title_2">Connect</span></h2>
+            </div>
+            <div class="contact-container reveal-up">
+                <div class="contact-blocks">
+                    <a href="https://wa.me/212612838528" target="_blank" class="contact-block-card">
+                        <div class="contact-block-icon whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </div>
+                        <div class="contact-block-info">
+                            <h3 data-i18n="contact_whatsapp_block">WhatsApp</h3>
+                            <p>+212 612-838528</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:hebbalhj@gmail.com" class="contact-block-card">
+                        <div class="contact-block-icon email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-block-info">
+                            <h3 data-i18n="contact_email_block">Email</h3>
+                            <p>hebbalhj@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-small-links">
+                    <a href="https://www.instagram.com/hebba.lh/" target="_blank" class="contact-small-link instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="17.5" cy="6.5" r="1.5" />
+                        </svg>
+                        <span data-i18n="contact_instagram">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">HL<span class="accent-dot">.</span></span>
+                <p class="footer-text" data-i18n="footer_rights">© 2026 Hiba Lahjou. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/212612838528" target="_blank" aria-label="WhatsApp" class="footer-social"
+                        data-i18n-aria="aria_whatsapp">Wa</a>
+                    <a href="https://www.instagram.com/hebba.lh/" target="_blank" aria-label="Instagram"
+                        class="footer-social" data-i18n-aria="aria_instagram">Ig</a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="footer-social"
+                        data-i18n-aria="aria_twitter">Tw</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <a href="https://wa.me/212612838528" target="_blank" class="whatsapp-widget" id="whatsappWidget"
+        aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
